@@ -1,0 +1,33 @@
+[project]
+name = "wazi"
+version = "0.1.0"
+description = "Command-line interface for Wabizabi."
+readme = "README.md"
+authors = [
+  { name = "aekn", email = "aekn.admal@gmail.com" },
+]
+requires-python = ">=3.13"
+dependencies = [
+  "wabizabi[ollama]>=0.1.0,<0.2.0",
+  "rich>=14.0",
+  "platformdirs>=4,<5",
+]
+
+[project.scripts]
+wazi = "wazi.__main__:main"
+
+[tool.uv.sources]
+wabizabi = { workspace = true }
+
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+wazi = ["py.typed"]
