@@ -6,7 +6,7 @@ This is a monorepo. It contains two packages: **wabizabi**, the runtime, and **w
 
 ## Status
 
-I'm rewriting the project against a new architecture. The earlier iteration is preserved under `_legacy/` directories so I can refer back to it, but it isn't the design I'm building toward. New development starts from [WIP-1](./docs/wips/wip-0001.md) onward.
+I'm rewriting the project against a new architecture. The earlier iteration is preserved under `_legacy/` directories so I can refer back to it, but it isn't the design I'm building toward. New development starts from WIP-1 onward.
 
 ## Design
 
